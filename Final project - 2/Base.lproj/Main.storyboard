@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7UV-5U-8zF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uF7-yf-CDd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -61,7 +61,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1100" y="275"/>
+            <point key="canvasLocation" x="1000" y="263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yOS-If-kaG">
+            <objects>
+                <viewController id="uF7-yf-CDd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xec-Gl-vyG"/>
+                        <viewControllerLayoutGuide type="bottom" id="NKX-7p-hqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nfH-8a-42E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sP-Kr-i8t">
+                                <rect key="frame" x="81" y="285" width="109" height="30"/>
+                                <state key="normal" title="Enter Calories"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="hms-oV-zmb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1sP-Kr-i8t" firstAttribute="centerY" secondItem="nfH-8a-42E" secondAttribute="centerY" id="Cb4-xH-9Zr"/>
+                            <constraint firstItem="1sP-Kr-i8t" firstAttribute="centerX" secondItem="nfH-8a-42E" secondAttribute="centerX" constant="-133" id="rIp-w5-gew"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etQ-Lr-tCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="967"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HXw-zp-jtj">
@@ -75,11 +106,15 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="W98-Ya-I9c"/>
+                        <segue destination="uF7-yf-CDd" kind="show" id="GZ1-ly-tBV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4G3-wL-NPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="461" y="275"/>
+            <point key="canvasLocation" x="263" y="263"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hms-oV-zmb"/>
+    </inferredMetricsTieBreakers>
 </document>
