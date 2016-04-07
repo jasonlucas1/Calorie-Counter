@@ -487,6 +487,7 @@
 				D7F97DB21CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7F97DB31CAD97A300D0F844 /* Build configuration list for PBXNativeTarget "Final project - 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +496,7 @@
 				D7F97DB51CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7F97DB61CAD97A300D0F844 /* Build configuration list for PBXNativeTarget "Final project - 2UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +505,7 @@
 				D7F97DB81CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
