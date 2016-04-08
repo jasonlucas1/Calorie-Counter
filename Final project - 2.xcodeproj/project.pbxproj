@@ -405,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Final project - 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Lucas.Final-project---2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Final project - 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jason-Lucas.Final-project---2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +489,7 @@
 				D7F97DB21CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7F97DB31CAD97A300D0F844 /* Build configuration list for PBXNativeTarget "Final project - 2Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +498,7 @@
 				D7F97DB51CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7F97DB61CAD97A300D0F844 /* Build configuration list for PBXNativeTarget "Final project - 2UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +507,7 @@
 				D7F97DB81CAD97A300D0F844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
