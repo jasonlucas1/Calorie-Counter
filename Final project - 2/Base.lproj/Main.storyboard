@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="yOS-If-kaG">
             <objects>
-                <viewController id="uF7-yf-CDd" sceneMemberID="viewController">
+                <viewController id="uF7-yf-CDd" customClass="ViewController" customModule="Final_project___2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xec-Gl-vyG"/>
                         <viewControllerLayoutGuide type="bottom" id="NKX-7p-hqJ"/>
@@ -55,6 +55,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DnH-jk-Ela"/>
+                    <connections>
+                        <outlet property="tableView" destination="T6M-uh-bzQ" id="Zrb-t8-Igt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etQ-Lr-tCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
