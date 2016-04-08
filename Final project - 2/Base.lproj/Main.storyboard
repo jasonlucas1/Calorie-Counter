@@ -55,11 +55,11 @@
             </objects>
             <point key="canvasLocation" x="3340" y="1338"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="KoM-lI-Hge">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVw-9h-PwC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="gac-lj-IoM"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="gac-lj-IoM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eoE-uU-cbq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
