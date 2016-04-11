@@ -54,7 +54,10 @@
                             <constraint firstItem="NKX-7p-hqJ" firstAttribute="top" secondItem="T6M-uh-bzQ" secondAttribute="bottom" id="P20-tY-U3k"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DnH-jk-Ela"/>
+                    <navigationItem key="navigationItem" id="DnH-jk-Ela">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="K3U-04-Cki"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Od-jj-EXj"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="T6M-uh-bzQ" id="Zrb-t8-Igt"/>
                     </connections>
