@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="3340" y="671"/>
         </scene>
-        <!--Detailed view controller-->
+        <!--DetailedViewcontroller-->
         <scene sceneID="vN8-Hj-eak">
             <objects>
-                <viewController title="Detailed view controller" id="g6t-1l-gn3" sceneMemberID="viewController">
+                <viewController title="DetailedViewcontroller" id="g6t-1l-gn3" customClass="DetailedViewController" customModule="Final_project___2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eat-zw-QuI"/>
                         <viewControllerLayoutGuide type="bottom" id="r2c-c8-I2Y"/>
