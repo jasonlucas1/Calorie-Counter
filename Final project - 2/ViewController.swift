@@ -32,4 +32,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             tableView.reloadData()
         }
     }
+    @IBAction func onTappedPlusButton(sender: AnyObject) {
+        let alert = UIAlertController(title: "Add Food", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add City Here"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: .nil)
+        alert.addAction(cancelAction)
+        let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
+            <#code#>
+        }
+    }
 }
