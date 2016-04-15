@@ -13,8 +13,6 @@ class DetailedViewController: UIViewController {
     @IBOutlet weak var foodTextField: UITextField!
     @IBOutlet weak var caloriesTextField: UITextField!
     
-    var days : Days!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
