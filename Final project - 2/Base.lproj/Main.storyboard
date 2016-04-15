@@ -113,6 +113,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="caloriesTextField" destination="Wx7-fa-QRZ" id="Ire-Me-bf6"/>
+                        <outlet property="foodTextField" destination="IFY-gK-aig" id="aiM-87-GXk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESv-Qi-ZkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
