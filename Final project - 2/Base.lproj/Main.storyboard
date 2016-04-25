@@ -85,15 +85,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFY-gK-aig">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFY-gK-aig">
                                 <rect key="frame" x="252" y="101" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wx7-fa-QRZ">
-                                <rect key="frame" x="252" y="202" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o2-We-KXg">
                                 <rect key="frame" x="258" y="72" width="84" height="21"/>
@@ -110,19 +105,22 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pjD-i4-n8k">
                                 <rect key="frame" x="225" y="299" width="150" height="2"/>
                             </progressView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wx7-fa-QRZ">
+                                <rect key="frame" x="252" y="202" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.89059165452831313" blue="0.094855745175615791" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-116.5" id="2q5-LG-e8e"/>
-                            <constraint firstItem="IFY-gK-aig" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="7Lx-hz-Vgr"/>
                             <constraint firstItem="0o2-We-KXg" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-217.5" id="AXo-B9-1LY"/>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="BwS-xX-ugk"/>
-                            <constraint firstItem="IFY-gK-aig" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-184" id="Rrf-eE-MWS"/>
+                            <constraint firstItem="Wx7-fa-QRZ" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="Nv2-UJ-HIQ"/>
+                            <constraint firstItem="IFY-gK-aig" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="Q5X-nf-31H"/>
                             <constraint firstItem="pjD-i4-n8k" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="ebU-Uh-1lb"/>
-                            <constraint firstItem="Wx7-fa-QRZ" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="k05-Gk-q6a"/>
                             <constraint firstItem="0o2-We-KXg" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="mSE-MU-fFD"/>
                             <constraint firstItem="pjD-i4-n8k" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" id="mW5-zh-fPb"/>
-                            <constraint firstItem="Wx7-fa-QRZ" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-83" id="nuj-Hk-zoH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -134,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="4004" y="671"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="9Vh-y1-IgV">
             <objects>
-                <viewController id="rap-gi-feq" sceneMemberID="viewController">
+                <viewController id="rap-gi-feq" customClass="ProfileViewController" customModule="Final_project___2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nQ7-no-lIu"/>
                         <viewControllerLayoutGuide type="bottom" id="Cxv-AO-cQu"/>
@@ -146,8 +144,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly intake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-3Y-zLh">
-                                <rect key="frame" x="247" y="119" width="107" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly intake goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-3Y-zLh">
+                                <rect key="frame" x="226" y="120" width="148" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-UG-mEi">
+                                <rect key="frame" x="252" y="162" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YuV-sB-gzk">
+                                <rect key="frame" x="225" y="462" width="150" height="2"/>
+                                <color key="tintColor" red="0.17878555614776015" green="1" blue="0.12889943708964435" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tog-il-9WC">
+                                <rect key="frame" x="282" y="433" width="37" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,6 +169,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZIj-Qg-s2v"/>
+                    <connections>
+                        <outlet property="progressLabel" destination="Tog-il-9WC" id="UkR-ue-z0d"/>
+                        <outlet property="progressView" destination="YuV-sB-gzk" id="gIH-N6-Mec"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGI-RH-4EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
