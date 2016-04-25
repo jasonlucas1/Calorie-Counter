@@ -58,7 +58,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DnH-jk-Ela">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="K3U-04-Cki"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Od-jj-EXj">
                             <connections>
                                 <action selector="onTappedPlusButton:" destination="uF7-yf-CDd" id="bMB-Y3-7tV"/>

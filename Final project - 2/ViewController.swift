@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
-    var days = ["Today"]
+    var days = ["Today", "Tommorow"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
