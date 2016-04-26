@@ -9,7 +9,7 @@
 import UIKit
 
 class Day: NSObject {
-    var calories = Int()
+    var calories = 0
     var food = ""
     
 
