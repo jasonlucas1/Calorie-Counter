@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var tableView: UITableView!
     var days = ["Today", "Tommorow"]
+    var info = Day()
     
     override func viewDidLoad() {
         super.viewDidLoad()

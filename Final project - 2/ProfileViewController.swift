@@ -12,11 +12,15 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
     var info = Day()
-
+    
+    var recievedString: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        progressLabel.text! = (recievedString)
+        
+        
     }
-   
+    
 }

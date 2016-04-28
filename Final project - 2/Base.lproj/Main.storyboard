@@ -96,16 +96,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wx7-fa-QRZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wx7-fa-QRZ">
                                 <rect key="frame" x="252" y="323" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cT-Q8-fCr">
                                 <rect key="frame" x="277" y="459" width="46" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="onButtonTappedSave:" destination="g6t-1l-gn3" eventType="touchUpInside" id="vI7-z8-CDZ"/>
+                                    <segue destination="rap-gi-feq" kind="presentation" id="Dll-8U-Sek"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFY-gK-aig">
@@ -116,8 +117,6 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.89059165452831313" blue="0.094855745175615791" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Wx7-fa-QRZ" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="88i-oI-JbG"/>
-                            <constraint firstItem="Wx7-fa-QRZ" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="38" id="DLg-1c-niV"/>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="W1a-ve-3bS"/>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" id="gBT-se-EPq"/>
                             <constraint firstItem="1cT-Q8-fCr" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="174" id="iD9-SY-wOr"/>
@@ -248,4 +247,7 @@
             <point key="canvasLocation" x="1716" y="671"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dll-8U-Sek"/>
+    </inferredMetricsTieBreakers>
 </document>

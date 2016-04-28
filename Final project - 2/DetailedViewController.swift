@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailedViewController: UIViewController {
+class DetailedViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var foodTextField: UITextField!
     @IBOutlet weak var caloriesTextField: UITextField!
@@ -17,13 +17,19 @@ class DetailedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        caloriesTextField.delegate = self //set delegate to textfile
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! ProfileViewController
-        dvc.info = self.info
+    func textFieldShouldReturn(textField: UITextField!) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
     }
+    
     @IBAction func onButtonTappedSave(sender: AnyObject) {
         
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var secondVC: ProfileViewController = segue.destinationViewController as! ProfileViewController
+        
+        secondVC.recievedString = caloriesTextField.text!
+    }
 }
