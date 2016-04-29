@@ -24,12 +24,4 @@ class DetailedViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func onButtonTappedSave(sender: AnyObject) {
-        
-    }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var secondVC: ProfileViewController = segue.destinationViewController as! ProfileViewController
-        
-        secondVC.recievedString = caloriesTextField.text!
-    }
 }

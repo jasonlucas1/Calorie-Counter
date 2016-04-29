@@ -101,14 +101,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cT-Q8-fCr">
-                                <rect key="frame" x="277" y="459" width="46" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="onButtonTappedSave:" destination="g6t-1l-gn3" eventType="touchUpInside" id="vI7-z8-CDZ"/>
-                                    <segue destination="rap-gi-feq" kind="presentation" id="Dll-8U-Sek"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFY-gK-aig">
                                 <rect key="frame" x="252" y="186" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -119,9 +111,7 @@
                         <constraints>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="W1a-ve-3bS"/>
                             <constraint firstItem="9aI-kc-2Ae" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" id="gBT-se-EPq"/>
-                            <constraint firstItem="1cT-Q8-fCr" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="174" id="iD9-SY-wOr"/>
                             <constraint firstItem="IFY-gK-aig" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="jmA-4C-hdV"/>
-                            <constraint firstItem="1cT-Q8-fCr" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="uTH-vo-eMv"/>
                             <constraint firstItem="0o2-We-KXg" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-217.5" id="wSz-Rz-0ig"/>
                             <constraint firstItem="0o2-We-KXg" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="ylC-ov-gXv"/>
                         </constraints>
@@ -191,6 +181,90 @@
             </objects>
             <point key="canvasLocation" x="3340" y="1338"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="xJY-0k-S2E">
+            <objects>
+                <viewController id="7UF-ec-Me7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h8q-Ik-c10"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bml-WI-4np"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Bu-mW-Fjd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-Be-wGx">
+                                <rect key="frame" x="172" y="84" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eN0-lN-bHi">
+                                <rect key="frame" x="172" y="153" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="wk1-1W-yxK">
+                                <rect key="frame" x="172" y="222" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="o60-dp-HgO">
+                                <rect key="frame" x="172" y="291" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-Ci-Seu">
+                                <rect key="frame" x="172" y="360" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="NF0-9g-Q4g">
+                                <rect key="frame" x="172" y="429" width="256" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7X4-mn-KjH">
+                                <rect key="frame" x="172" y="498" width="256" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLX-kY-pbx">
+                                <rect key="frame" x="41" y="88" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuesday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-vg-zYq">
+                                <rect key="frame" x="41" y="157" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wendnesday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcs-yK-kKy">
+                                <rect key="frame" x="41" y="226" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OO7-Ra-bdg">
+                                <rect key="frame" x="41" y="295" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcL-gE-zHh">
+                                <rect key="frame" x="41" y="364" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-up-DjZ">
+                                <rect key="frame" x="41" y="433" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMy-pZ-9Lp">
+                                <rect key="frame" x="41" y="502" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3TK-VE-dp7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40Z-e9-Sow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340" y="2006"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="KoM-lI-Hge">
             <objects>
@@ -240,14 +314,31 @@
                     <connections>
                         <segue destination="LVw-9h-PwC" kind="relationship" relationship="viewControllers" id="nOn-4H-rlP"/>
                         <segue destination="r2s-Cf-l3x" kind="relationship" relationship="viewControllers" id="r0Z-UJ-sp6"/>
+                        <segue destination="FAt-bc-yE4" kind="relationship" relationship="viewControllers" id="s8a-oj-Nr3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNR-cQ-bcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="671"/>
         </scene>
+        <!--Counter-->
+        <scene sceneID="Kzo-7x-8rU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FAt-bc-yE4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Counter" id="xbE-oH-UWV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Tu-uH-5cD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7UF-ec-Me7" kind="relationship" relationship="rootViewController" id="Lq1-d5-4Xu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4W-BU-ir4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="2006"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Dll-8U-Sek"/>
-    </inferredMetricsTieBreakers>
 </document>
