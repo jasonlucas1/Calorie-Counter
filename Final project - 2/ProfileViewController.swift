@@ -12,7 +12,6 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
     var info = Day()
-    
  
     
     override func viewDidLoad() {
