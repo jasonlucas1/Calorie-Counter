@@ -10,7 +10,7 @@ import UIKit
 
 class DetailedViewController: UIViewController, UITextFieldDelegate {
 
-    var info = Day()
+   
    
     
     override func viewDidLoad() {

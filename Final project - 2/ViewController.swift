@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet weak var tableView: UITableView!
-    var days = ["Monday", "Tuesday", "Wendnesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    var info = Day()
+    var days = ["Breakfast", "Lunch", "Dinner"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
