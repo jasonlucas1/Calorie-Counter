@@ -32,20 +32,5 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             tableView.reloadData()
         }
     }
-    @IBAction func onTappedPlusButton(sender: AnyObject) {
-        let alert = UIAlertController(title: "Add Date", message: nil, preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler { (textField) in
-            textField.placeholder = "Enter Date here"
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
-        alert.addAction(cancelAction)
-        let addAction = UIAlertAction(title: "Add", style: .Default) { (action) in
-            let dayTextField = alert.textFields![0] as UITextField
-            self.days.append(dayTextField.text!)
-            self.tableView.reloadData() }
-            alert.addAction(addAction)
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
-    
-    }
     
 }

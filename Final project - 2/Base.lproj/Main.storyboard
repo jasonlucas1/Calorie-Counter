@@ -67,13 +67,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="T6M-uh-bzQ" secondAttribute="trailing" constant="-20" id="u3C-xX-c0H"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DnH-jk-Ela">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1Od-jj-EXj">
-                            <connections>
-                                <action selector="onTappedPlusButton:" destination="uF7-yf-CDd" id="bMB-Y3-7tV"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="DnH-jk-Ela"/>
                     <connections>
                         <outlet property="tableView" destination="T6M-uh-bzQ" id="Zrb-t8-Igt"/>
                     </connections>
@@ -94,37 +88,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount of Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGx-4Y-1Z5">
-                                <rect key="frame" x="80" y="192" width="150" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Daily Consumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zL-N1-Ju9">
+                                <rect key="frame" x="129" y="416" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zL-N1-Ju9">
-                                <rect key="frame" x="80" y="241" width="132" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-KN-SQi">
+                                <rect key="frame" x="249" y="89" width="103" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4J-KN-SQi">
-                                <rect key="frame" x="249" y="92" width="103" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Amount of Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGx-4Y-1Z5">
+                                <rect key="frame" x="123" y="245" width="355" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97767611433005197" green="1" blue="0.97068328258296377" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BGx-4Y-1Z5" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-34.5" id="FqU-ob-3yl"/>
+                            <constraint firstItem="a4J-KN-SQi" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="-190.5" id="GWh-Ey-Vhi"/>
+                            <constraint firstItem="9zL-N1-Ju9" firstAttribute="centerY" secondItem="9ps-qn-4AA" secondAttribute="centerY" constant="137.5" id="XJY-PU-1x2"/>
+                            <constraint firstItem="BGx-4Y-1Z5" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="b3x-0w-OGj"/>
+                            <constraint firstItem="a4J-KN-SQi" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="shF-B7-GFl"/>
+                            <constraint firstItem="9zL-N1-Ju9" firstAttribute="centerX" secondItem="9ps-qn-4AA" secondAttribute="centerX" id="zYt-n9-AzO"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountOfCalories" destination="BGx-4Y-1Z5" id="BeQ-6P-E6P"/>
+                        <outlet property="dailyConstructionLabel" destination="9zL-N1-Ju9" id="6Qk-qk-uFe"/>
+                        <outlet property="foodLabel" destination="a4J-KN-SQi" id="S9K-o7-AAj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESv-Qi-ZkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3996" y="671"/>
         </scene>
-        <!--Profile-->
+        <!--Tracker-->
         <scene sceneID="KoM-lI-Hge">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVw-9h-PwC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="gac-lj-IoM"/>
+                    <tabBarItem key="tabBarItem" title="Tracker" id="gac-lj-IoM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eoE-uU-cbq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -151,11 +158,26 @@
                     </tabBar>
                     <connections>
                         <segue destination="LVw-9h-PwC" kind="relationship" relationship="viewControllers" id="nOn-4H-rlP"/>
+                        <segue destination="gAE-dX-aTv" kind="relationship" relationship="viewControllers" id="dF9-Gm-sKU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZNR-cQ-bcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="671"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="Fbz-7m-ade">
+            <objects>
+                <navigationController id="gAE-dX-aTv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Input" id="j4d-W3-iPY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bnk-J0-zqV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cR-z9-k3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="1341"/>
         </scene>
     </scenes>
 </document>

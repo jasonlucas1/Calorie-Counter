@@ -9,6 +9,9 @@
 import UIKit
 
 class DetailedViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var foodLabel: UILabel!
+    @IBOutlet weak var amountOfCalories: UILabel!
+    @IBOutlet weak var dailyConstructionLabel: UILabel!
 
    
    
