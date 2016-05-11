@@ -1,0 +1,50 @@
+//
+//  inputViewController.swift
+//  Final project - 2
+//
+//  Created by Jason Lucas on 5/11/16.
+//  Copyright © 2016 Jason Lucas. All rights reserved.
+//
+
+import UIKit
+
+class inputViewController: UIViewController {
+    var data = Data()
+    
+    
+    @IBOutlet weak var dailyCalorieIntakeTextField: UITextField!
+    @IBOutlet weak var breakfastFoodTextField: UITextField!
+    @IBOutlet weak var breakfastCalorieTextField: UITextField!
+    @IBOutlet weak var lunchFoodTextField: UITextField!
+    @IBOutlet weak var lunchCalorieTextField: UITextField!
+    @IBOutlet weak var dinnerFoodTextField: UITextField!
+    @IBOutlet weak var dinnerCalorieTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+      
+        
+    }
+    
+    @IBAction func breakfastOnTappedButtonSaved(sender: AnyObject) {
+        
+        data.breakfastFood = breakfastFoodTextField.text!
+        data.breakfastCalories = breakfastCalorieTextField.text!
+
+    }
+    
+    @IBAction func lunchOnTappedButtonSaved(sender: AnyObject) {
+        
+        data.lunchFood = lunchFoodTextField.text!
+        data.lunchCalories = lunchCalorieTextField.text!
+        
+    }
+    
+    @IBAction func dinnerOnTappedButtonSaved(sender: AnyObject) {
+        
+        data.dinnerFood = dinnerFoodTextField.text!
+        data.dinnerCalories = dinnerCalorieTextField.text!
+    }
+    
+}

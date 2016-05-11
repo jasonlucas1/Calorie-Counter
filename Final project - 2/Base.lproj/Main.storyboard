@@ -111,21 +111,21 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.1486601628" blue="0.17203195020000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test                        " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-JK-dB6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="                " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-JK-dB6">
                                 <rect key="frame" x="270" y="169" width="60" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.1486601628" blue="0.17203195020000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test                        " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIS-TJ-HeU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="              " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIS-TJ-HeU">
                                 <rect key="frame" x="270" y="325" width="60" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.1486601628" blue="0.17203195020000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test                        " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccA-83-aBT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="                  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccA-83-aBT">
                                 <rect key="frame" x="270" y="484" width="60" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -151,8 +151,11 @@
                     </view>
                     <connections>
                         <outlet property="amountOfCalories" destination="BGx-4Y-1Z5" id="BeQ-6P-E6P"/>
+                        <outlet property="amountOfCaloriesResultsLabel" destination="zIS-TJ-HeU" id="DgV-PF-V1p"/>
                         <outlet property="dailyConstructionLabel" destination="9zL-N1-Ju9" id="6Qk-qk-uFe"/>
+                        <outlet property="dailyConsumptionResultsLabel" destination="ccA-83-aBT" id="gTM-Br-mcB"/>
                         <outlet property="foodLabel" destination="a4J-KN-SQi" id="S9K-o7-AAj"/>
+                        <outlet property="foodResultsLabel" destination="kdX-JK-dB6" id="chr-5A-yhD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESv-Qi-ZkR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,10 +217,10 @@
             </objects>
             <point key="canvasLocation" x="2528" y="1341"/>
         </scene>
-        <!--View Controller-->
+        <!--Input View Controller-->
         <scene sceneID="B20-cG-2cj">
             <objects>
-                <viewController id="ROg-RU-o8G" sceneMemberID="viewController">
+                <viewController id="ROg-RU-o8G" customClass="inputViewController" customModule="Final_project___2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LMc-Pl-vha"/>
                         <viewControllerLayoutGuide type="bottom" id="IEr-YZ-WB5"/>
@@ -263,7 +266,7 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="1" green="0.1486601628" blue="0.17203195020000001" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fay-T4-Ddg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fay-T4-Ddg">
                                 <rect key="frame" x="63" y="285" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9cq-Yd-3Eg"/>
@@ -272,7 +275,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-ul-VxJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-ul-VxJ">
                                 <rect key="frame" x="252" y="285" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9CZ-aX-WSe"/>
@@ -281,7 +284,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-a8-N30">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-a8-N30">
                                 <rect key="frame" x="63" y="361" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rg7-fJ-fgX"/>
@@ -290,7 +293,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUt-Eg-pjH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUt-Eg-pjH">
                                 <rect key="frame" x="252" y="361" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="lnj-Va-NAx"/>
@@ -299,7 +302,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-Q6-DzR">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Calories" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-Q6-DzR">
                                 <rect key="frame" x="459" y="361" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hhB-o9-m8v"/>
@@ -308,19 +311,28 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TY-TQ-1yq">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8TY-TQ-1yq">
                                 <rect key="frame" x="88" y="489" width="46" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="breakfastOnTappedButtonSaved:" destination="ROg-RU-o8G" eventType="touchUpInside" id="ciO-nF-aVp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-lz-lS9">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-lz-lS9">
                                 <rect key="frame" x="277" y="489" width="46" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="lunchOnTappedButtonSaved:" destination="ROg-RU-o8G" eventType="touchUpInside" id="lyd-vt-rYN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNV-Uw-XYa">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNV-Uw-XYa">
                                 <rect key="frame" x="484" y="489" width="46" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="dinnerOnTappedButtonSaved:" destination="ROg-RU-o8G" eventType="touchUpInside" id="Lcu-BG-DSB"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgf-Ho-HQo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Food" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgf-Ho-HQo">
                                 <rect key="frame" x="459" y="285" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1Gx-3A-nRA"/>
@@ -332,14 +344,41 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
+                            <constraint firstItem="KUt-Eg-pjH" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" id="1Hq-SW-vT8"/>
+                            <constraint firstItem="TRH-ul-VxJ" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" id="3O3-EL-Emk"/>
+                            <constraint firstItem="Sgf-Ho-HQo" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" id="8Hj-yp-pe0"/>
                             <constraint firstItem="peJ-cG-FrO" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" id="A8h-7o-B2t"/>
+                            <constraint firstItem="MjI-a8-N30" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="76" id="Ai4-Ge-xCk"/>
+                            <constraint firstItem="8TY-TQ-1yq" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="-189" id="E8Y-i8-I4p"/>
+                            <constraint firstItem="cmu-Q6-DzR" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="207.5" id="HRe-EX-swQ"/>
+                            <constraint firstItem="fay-T4-Ddg" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" id="It1-Li-eaW"/>
                             <constraint firstItem="peJ-cG-FrO" firstAttribute="top" secondItem="bxQ-tH-vjr" secondAttribute="bottom" constant="18" id="LlQ-V2-8lc"/>
+                            <constraint firstItem="MjI-a8-N30" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="-188.5" id="Mgz-9h-uak"/>
+                            <constraint firstItem="Sgf-Ho-HQo" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="207.5" id="Pzt-AU-qI4"/>
+                            <constraint firstItem="TRH-ul-VxJ" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" id="SNS-Hh-nrH"/>
                             <constraint firstItem="peJ-cG-FrO" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="-130" id="UUB-x7-fhM"/>
+                            <constraint firstItem="8TY-TQ-1yq" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="204" id="YDd-6b-zMA"/>
+                            <constraint firstItem="fay-T4-Ddg" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="-188.5" id="Zkt-gx-2CO"/>
                             <constraint firstItem="bxQ-tH-vjr" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="-173.5" id="b3Y-7W-gjJ"/>
+                            <constraint firstItem="nNV-Uw-XYa" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="204" id="dEL-EW-LSJ"/>
+                            <constraint firstItem="Snn-lz-lS9" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" id="fPL-lB-XpX"/>
+                            <constraint firstItem="cmu-Q6-DzR" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="76" id="oxx-V2-lwZ"/>
                             <constraint firstItem="bxQ-tH-vjr" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" id="pAV-0u-dbF"/>
+                            <constraint firstItem="Snn-lz-lS9" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="204" id="sex-Bj-Yvx"/>
+                            <constraint firstItem="nNV-Uw-XYa" firstAttribute="centerX" secondItem="wWg-MG-RPM" secondAttribute="centerX" constant="207" id="trf-Oy-dG7"/>
+                            <constraint firstItem="KUt-Eg-pjH" firstAttribute="centerY" secondItem="wWg-MG-RPM" secondAttribute="centerY" constant="76" id="zOy-Lq-Ssb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="463-ID-rXa"/>
+                    <connections>
+                        <outlet property="breakfastCalorieTextField" destination="MjI-a8-N30" id="a2K-Eo-V4V"/>
+                        <outlet property="breakfastFoodTextField" destination="fay-T4-Ddg" id="KlM-1d-YsL"/>
+                        <outlet property="dailyCalorieIntakeTextField" destination="peJ-cG-FrO" id="hXB-h8-dBi"/>
+                        <outlet property="dinnerCalorieTextField" destination="cmu-Q6-DzR" id="5Ly-3M-oOz"/>
+                        <outlet property="dinnerFoodTextField" destination="Sgf-Ho-HQo" id="bWl-OU-bcO"/>
+                        <outlet property="lunchCalorieTextField" destination="KUt-Eg-pjH" id="GbM-18-tmH"/>
+                        <outlet property="lunchFoodTextField" destination="TRH-ul-VxJ" id="Sag-QS-lBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aop-rR-S70" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
