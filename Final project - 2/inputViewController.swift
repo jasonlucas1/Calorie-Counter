@@ -47,4 +47,15 @@ class inputViewController: UIViewController {
         data.dinnerCalories = dinnerCalorieTextField.text!
     }
     
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?){
+        view.endEditing(true)
+        super.touchesBegan(touches, withEvent: event)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let dvc = segue.destinationViewController as! DetailedViewController
+        dvc.data = self.data
+    }
+    
 }

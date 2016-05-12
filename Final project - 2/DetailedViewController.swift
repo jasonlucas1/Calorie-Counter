@@ -25,7 +25,7 @@ class DetailedViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         foodResultsLabel.text! = data.breakfastFood
-        amountOfCalories.text! = data.breakfastCalories
+        amountOfCaloriesResultsLabel.text! = data.breakfastCalories
         
     }
     
