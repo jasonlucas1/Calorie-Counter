@@ -10,6 +10,8 @@ import UIKit
 
 class DetailedViewController: UIViewController, UITextFieldDelegate {
     var data = Data()
+    var foodText = ""
+    var caloriesText = ""
     
     
     @IBOutlet weak var foodLabel: UILabel!
@@ -24,8 +26,8 @@ class DetailedViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        foodResultsLabel.text! = data.breakfastFood
-        amountOfCaloriesResultsLabel.text! = data.breakfastCalories
+        foodResultsLabel.text! = foodText
+        amountOfCaloriesResultsLabel.text! = caloriesText
         
     }
     

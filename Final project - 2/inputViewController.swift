@@ -10,6 +10,8 @@ import UIKit
 
 class inputViewController: UIViewController {
     var data = Data()
+    var food = ""
+    var calories = ""
     
     
     @IBOutlet weak var dailyCalorieIntakeTextField: UITextField!
@@ -28,9 +30,8 @@ class inputViewController: UIViewController {
     }
     
     @IBAction func breakfastOnTappedButtonSaved(sender: AnyObject) {
-        
-        data.breakfastFood = breakfastFoodTextField.text!
-        data.breakfastCalories = breakfastCalorieTextField.text!
+        food = breakfastFoodTextField.text!
+        calories = breakfastCalorieTextField.text!
 
     }
     
@@ -55,7 +56,8 @@ class inputViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         let dvc = segue.destinationViewController as! DetailedViewController
-        dvc.data = self.data
+        dvc.foodText = food
+        dvc.caloriesText = calories
     }
     
 }

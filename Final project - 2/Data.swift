@@ -17,4 +17,11 @@ class Data: NSObject {
     var dinnerFood = ""
     var dinnerCalories = ""
     
+    convenience init(food: String, calories: String) {
+        self.init()
+        self.breakfastFood = food
+        self.breakfastCalories = calories
+    }
+    
+    
 }
