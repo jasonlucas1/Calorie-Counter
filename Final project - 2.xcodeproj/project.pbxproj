@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FE1A7911CC0067700974EB2 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE1A7901CC0067700974EB2 /* DetailedViewController.swift */; };
-		D759F1BB1CE39B5100FD854D /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F1BA1CE39B5100FD854D /* inputViewController.swift */; };
-		D759F1BD1CE39D7F00FD854D /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D759F1BC1CE39D7F00FD854D /* Data.swift */; };
+		D7244E9B1CE9156E006C6866 /* DailyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7244E9A1CE9156E006C6866 /* DailyResultViewController.swift */; };
+		D7244E9F1CE92695006C6866 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7244E9E1CE92695006C6866 /* ResultsViewController.swift */; };
 		D7F97D8C1CAD97A300D0F844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F97D8B1CAD97A300D0F844 /* AppDelegate.swift */; };
 		D7F97D8E1CAD97A300D0F844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F97D8D1CAD97A300D0F844 /* ViewController.swift */; };
 		D7F97D911CAD97A300D0F844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F97D8F1CAD97A300D0F844 /* Main.storyboard */; };
@@ -37,9 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3FE1A7901CC0067700974EB2 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
-		D759F1BA1CE39B5100FD854D /* inputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
-		D759F1BC1CE39D7F00FD854D /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D7244E9A1CE9156E006C6866 /* DailyResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyResultViewController.swift; sourceTree = "<group>"; };
+		D7244E9E1CE92695006C6866 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		D7F97D881CAD97A300D0F844 /* Final project - 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final project - 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F97D8B1CAD97A300D0F844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7F97D8D1CAD97A300D0F844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +103,8 @@
 			children = (
 				D7F97D8B1CAD97A300D0F844 /* AppDelegate.swift */,
 				D7F97D8D1CAD97A300D0F844 /* ViewController.swift */,
-				3FE1A7901CC0067700974EB2 /* DetailedViewController.swift */,
-				D759F1BA1CE39B5100FD854D /* inputViewController.swift */,
-				D759F1BC1CE39D7F00FD854D /* Data.swift */,
+				D7244E9A1CE9156E006C6866 /* DailyResultViewController.swift */,
+				D7244E9E1CE92695006C6866 /* ResultsViewController.swift */,
 				D7F97D8F1CAD97A300D0F844 /* Main.storyboard */,
 				D7F97D921CAD97A300D0F844 /* Assets.xcassets */,
 				D7F97D941CAD97A300D0F844 /* LaunchScreen.storyboard */,
@@ -269,10 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7F97D8E1CAD97A300D0F844 /* ViewController.swift in Sources */,
-				D759F1BD1CE39D7F00FD854D /* Data.swift in Sources */,
 				D7F97D8C1CAD97A300D0F844 /* AppDelegate.swift in Sources */,
-				3FE1A7911CC0067700974EB2 /* DetailedViewController.swift in Sources */,
-				D759F1BB1CE39B5100FD854D /* inputViewController.swift in Sources */,
+				D7244E9B1CE9156E006C6866 /* DailyResultViewController.swift in Sources */,
+				D7244E9F1CE92695006C6866 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
