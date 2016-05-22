@@ -9,6 +9,8 @@
 import UIKit
 
 class DailyResultViewController: UIViewController {
+    
+    //Variables
     var breakfastFoodText = ""
     var breakfastCaloriesText = 0
     var lunchFoodText = ""
@@ -16,6 +18,8 @@ class DailyResultViewController: UIViewController {
     var dinnerFoodText = ""
     var dinnerCaloriesText = 0
     var calorieGoalText = 0
+    
+    //Labels
     @IBOutlet weak var breakFastFoodLabel: UILabel!
     @IBOutlet weak var breakfastCaloriesLabel: UILabel!
     @IBOutlet weak var lunchFoodLabel: UILabel!
@@ -23,11 +27,13 @@ class DailyResultViewController: UIViewController {
     @IBOutlet weak var dinnerFoodLabel: UILabel!
     @IBOutlet weak var dinnerCaloriesLabel: UILabel!
     @IBOutlet weak var calorieGoalLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabels()
     }
-
+    
+    //Set's the label to what the user entered into textfields before
     func setLabels() {
         breakFastFoodLabel.text! = breakfastFoodText
         breakfastCaloriesLabel.text! = String(breakfastCaloriesText)
@@ -37,6 +43,8 @@ class DailyResultViewController: UIViewController {
         dinnerCaloriesLabel.text! = String(dinnerCaloriesText)
         calorieGoalLabel.text! = String(calorieGoalText)
     }
+    
+    //Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let dvc = segue.destinationViewController as! ResultsViewController
         dvc.breakfastFoodCalories = breakfastCaloriesText
